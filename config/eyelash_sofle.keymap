@@ -64,6 +64,131 @@
 
             label = "SHIFT_MCLK";
         };
+        
+        NextDesktop: NextDesktop {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_GUI &kp LCTRL>,
+                <&macro_tap>,
+                <&kp RIGHT>,
+                <&macro_release>,
+                <&kp LEFT_GUI &kp LEFT_CONTROL>,
+                <&macro_press>;
+
+            label = "NEXTDESKTOP";
+            wait-ms = <10>;
+            tap-ms = <5>;
+        };
+
+        PrevDesktop: PrevDesktop {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_GUI &kp LCTRL>,
+                <&macro_tap>,
+                <&kp LEFT_ARROW>,
+                <&macro_release>,
+                <&kp LEFT_GUI &kp LEFT_CONTROL>;
+
+            label = "PREVDESKTOP";
+            wait-ms = <10>;
+            tap-ms = <5>;
+        };
+
+        CreateDesktop: CreateDesktop {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LC(LEFT_GUI)>,
+                <&macro_tap>,
+                <&kp D>,
+                <&macro_release>,
+                <&kp LC(LEFT_GUI)>;
+
+            label = "CREATEDESKTOP";
+            wait-ms = <10>;
+            tap-ms = <5>;
+        };
+
+        DeleteDesktop: DeleteDesktop {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LEFT_GUI>,
+                <&macro_tap>,
+                <&kp F4>,
+                <&macro_release>,
+                <&kp LCTRL &kp LEFT_GUI>;
+
+            label = "DELETEDESKTOP";
+            tap-ms = <5>;
+            wait-ms = <10>;
+        };
+
+        AltF4: AltF4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp F4>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "ALTF4";
+            wait-ms = <10>;
+            tap-ms = <5>;
+        };
+
+        AppSwitcher: AppSwitcher {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_GUI>,
+                <&macro_tap>,
+                <&kp TAB>,
+                <&macro_release>,
+                <&kp LEFT_GUI>;
+
+            label = "APPSWITCHER";
+            wait-ms = <10>;
+            tap-ms = <5>;
+        };
+
+        Clipboard: Clipboard {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_GUI>,
+                <&macro_tap>,
+                <&kp V>,
+                <&macro_release>,
+                <&kp LEFT_GUI>;
+
+            label = "CLIPBOARD";
+        };
+
+        EmojiMenu: EmojiMenu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_GUI>,
+                <&macro_tap>,
+                <&kp DOT>,
+                <&macro_release>,
+                <&kp LEFT_GUI>;
+
+            label = "EMOJIMENU";
+        };
     };
 
     keymap {
