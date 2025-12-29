@@ -208,11 +208,11 @@
 
         Second {
             bindings = <
-&AltF4                                         &trans     &trans     &trans      &kp LEFT_WIN  &kp PRINTSCREEN    &mmv MOVE_UP     &trans          &trans         &trans        &kp STAR        &kp MINUS         &kp EQUAL
-&trans                                         &kp GRAVE  &mkp LCLK  &mkp MCLK   &mkp RCLK     &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP       &kp PAGE_DOWN  &kp END       &kp HOME        &kp INSERT        &trans
-&trans                                         &kp TILDE  &trans     &trans      &trans        &mkp MB5           &mmv MOVE_LEFT   &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT       &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans                                         &trans     &trans     &EmojiMenu  &Clipboard    &AppSwitcher       &mmv MOVE_RIGHT  &trans          &trans         &trans        &trans          &trans            &trans
-&mt C_BRIGHTNESS_MINIMUM C_BRIGHTNESS_MAXIMUM  &trans     &trans     &trans      &trans        &trans             &mkp LCLK        &trans          &PrevDesktop   &NextDesktop  &DeleteDesktop  &CreateDesktop
+&AltF4                                         &trans     &trans        &trans      &trans      &kp PRINTSCREEN    &mmv MOVE_UP     &trans          &trans         &trans        &kp STAR        &kp MINUS         &kp EQUAL
+&trans                                         &kp GRAVE  &mkp LCLK     &mkp MCLK   &mkp RCLK   &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP       &kp PAGE_DOWN  &kp END       &kp HOME        &kp INSERT        &trans
+&trans                                         &kp TILDE  &trans        &trans      &trans      &mkp MB5           &mmv MOVE_LEFT   &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT       &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans                                         &trans     &kp LEFT_WIN  &EmojiMenu  &Clipboard  &AppSwitcher       &mmv MOVE_RIGHT  &trans          &trans         &trans        &trans          &trans            &trans
+&mt C_BRIGHTNESS_MINIMUM C_BRIGHTNESS_MAXIMUM  &trans     &trans        &trans      &trans      &trans             &mkp LCLK        &trans          &PrevDesktop   &NextDesktop  &DeleteDesktop  &CreateDesktop
             >;
 
             display-name = "Second";
